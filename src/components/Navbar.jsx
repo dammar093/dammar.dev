@@ -49,20 +49,20 @@ const Navbar = () => {
           </div>
         </div>
         {
-          menu ? <div className='w-full h-screen bg-slate-950 md:hidden flex items-center justify-center flex-col gap-10 z-30 absolute top-14'>
+          !menu ? <div className='w-full h-screen bg-slate-950 md:hidden flex items-center justify-center flex-col gap-10 z-30 absolute top-14 left-0 right-0'>
             <div>
               <NavLink to={"/"} className={'text-xl text-white hover:text-green-400'}
-                onClick={() => setmenu(false)}
+                onClick={() => setmenu(prev => !prev)}
               ><span>Home</span></NavLink>
             </div>
             <div>
               <NavLink to={"projects"} className={'text-xl text-white hover:text-green-400'}
-                onClick={() => setmenu(false)}
+                onClick={() => setmenu(prev => !prev)}
               ><span>Projects</span></NavLink>
             </div>
             <div>
               <NavLink to={"about"} className={'text-xl text-white hover:text-green-400'}
-                onClick={() => setmenu(false)}
+                onClick={() => setmenu(prev => !prev)}
               ><span>About</span></NavLink>
             </div>
             <div>
