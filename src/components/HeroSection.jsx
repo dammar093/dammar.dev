@@ -2,7 +2,7 @@ import React from 'react'
 import heroImage from "../assets/dyM.jpg"
 const HeroSection = () => {
   return (
-    <section className=' w-full h-screen flex md:justify-between justify-center md:items-center flex-wrap-reverse'>
+    <section className=' w-full h-[90vh] flex md:justify-between justify-center md:items-center flex-wrap-reverse my-4 py-4'>
       <div className='md:w-[47%] w-full md:text-left text-center'>
         <div>
           <div className='text-green-400 text-2xl md:text-3xl'>Hello👋</div>
@@ -12,9 +12,9 @@ const HeroSection = () => {
         </div>
         <div>
           <br />
-          <p className='text-md' style={{ textAlign: "justify" }}>
+          <p className='text-md text-white' style={{ textAlign: "justify" }}>
             Hi there. My name is Dammar Singh Rana. I am a frontend developer.
-            I am working with HTML,CSS,JS,React,Tailwind and Bootstrap. I have 2+ experience of frontend developement.
+            I am working with HTML, CSS, JS,ReactJS, Tailwind and Bootstrap. I have 2+ experience of frontend developement.
           </p>
         </div>
         <br />
@@ -23,7 +23,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className='md:w-[47%] w-full flex items-center justify-center'>
-        <div className='rounded-full w-[300px] h-[300px] md:h-[500px] md:w-[500px] '>
+        <div className='rounded-full w-[280px] h-[280px] md:h-[450px] md:w-[450px] '>
           <img className='h-full w-full rounded-full object-cover' src={heroImage} alt="hero image" />
         </div>
       </div>

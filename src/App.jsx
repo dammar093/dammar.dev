@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom'
 function App() {
 
   return (
-    <div className='bg-slate-800'>
+    <div className='bg-[#0E1630]'>
       <div className='sticky top-0 z-100'>
         <Navbar />
       </div>
