@@ -8,7 +8,7 @@ import { MdMenu, MdClose } from "react-icons/md";
 const Navbar = () => {
   const [menu, setmenu] = useState(true)
   return (
-    <header className='overflow-hidden w-full bg-[#0E1630] shadow-lg '>
+    <header className='overflow-hidden w-full bg-[#0E1630] shadow-lg  z-50'>
       <Container >
         <div className='w-full flex justify-between gap-4 items-center h-14 relative'>
           <div>
