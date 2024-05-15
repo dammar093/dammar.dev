@@ -2,7 +2,7 @@ import React from 'react'
 import heroImage from "../assets/dyM.jpg"
 const HeroSection = () => {
   return (
-    <section className=' w-full h-screen flex md:justify-between justify-center items-center flex-wrap'>
+    <section className=' w-full h-screen flex md:justify-between justify-center items-center flex-wrap-reverse'>
       <div className='md:w-[47%] w-full'>
         <div>
           <div className='text-green-400 text-3xl'>Hello👋</div>
