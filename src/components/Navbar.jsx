@@ -51,7 +51,7 @@ const Navbar = () => {
             }
           </div>
         </div>
-        <div style={{ position: "relative", top: 0, left: nav, transition: 'all' }} className='w-full h-screen bg-slate-950 md:hidden flex items-center justify-center flex-col gap-10'>
+        <div style={{ position: "relative", top: 0, right: `${nav}px`, transition: `all 300ms ease` }} className='w- full h-screen bg-slate-950 md:hidden flex items-center justify-center flex-col gap-10'>
           <div>
             <NavLink to={"/"} className={'text-xl text-white hover:text-green-400'}><span>Home</span></NavLink>
           </div>
