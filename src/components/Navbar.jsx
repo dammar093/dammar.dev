@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import Container from './Container'
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
-import { MdMenu } from "react-icons/md";
-
+import { MdMenu, MdClose } from "react-icons/md";
 
 const Navbar = () => {
+  const [nav, setNav] = useState(-500)
+  const [menu, setmenu] = useState(true)
   return (
     <header className='bg-slate-800 w-full h-14 '>
       <Container>
@@ -29,16 +30,47 @@ const Navbar = () => {
             </NavLink>
 
             <div className='flex gap-6 items-center'>
-              <NavLink className={"text-white text-xl font-semibold hover:text-green-400"} target='_blank' to={"https://github.com/dammar093"}>
+              <Link className={"text-white text-xl font-semibold hover:text-green-400"} target='_blank' to={"https://github.com/dammar093"}>
                 <span><FaGithub /></span>
-              </NavLink>
-              <NavLink className={"text-white text-xl font-semibold hover:text-green-400"} target='_blank' to={"https://www.linkedin.com/in/dammar-rana-983077238/"}>
+              </Link>
+              <Link className={"text-white text-xl font-semibold hover:text-green-400"} target='_blank' to={"https://www.linkedin.com/in/dammar-rana-983077238/"}>
                 <span><FaLinkedin /></span>
-              </NavLink>
+              </Link>
             </div>
           </div>
           <div className=' w-8 h-8 md:hidden flex justify-center items-center border border-dashed'>
-            <MdMenu className='text-xl text-white' />
+            {
+              menu ? <MdMenu className='text-xl transition-all delay-200 text-white' onClick={() => {
+                setNav(0)
+                setmenu(false)
+              }
+              } /> : <MdClose className='text-xl transition-all delay-200 text-white' onClick={() => {
+                setNav(-500)
+                setmenu(true)
+              }} />
+            }
+          </div>
+        </div>
+        <div style={{ position: "relative", top: 0, left: nav, transition: 'all' }} className='w-full h-screen bg-slate-950 md:hidden flex items-center justify-center flex-col gap-10'>
+          <div>
+            <NavLink to={"/"} className={'text-xl text-white hover:text-green-400'}><span>Home</span></NavLink>
+          </div>
+          <div>
+            <NavLink to={"projects"} className={'text-xl text-white hover:text-green-400'}><span>Projects</span></NavLink>
+          </div>
+          <div>
+            <NavLink to={"about"} className={'text-xl text-white hover:text-green-400'}><span>About</span></NavLink>
+          </div>
+          <div>
+            <NavLink to={"contact"} className={'text-xl text-white hover:text-green-400'}><span>Contact</span></NavLink>
+          </div>
+          <div className='flex gap-4'>
+            <Link className={"text-white text-2xl font-semibold hover:text-green-400"} target='_blank' to={"https://github.com/dammar093"}>
+              <span><FaGithub /></span>
+            </Link>
+            <Link className={"text-white text-2xl font-semibold hover:text-green-400"} target='_blank' to={"https://www.linkedin.com/in/dammar-rana-983077238/"}>
+              <span><FaLinkedin /></span>
+            </Link>
           </div>
         </div>
       </Container>
