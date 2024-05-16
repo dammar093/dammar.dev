@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Skills = () => {
+const Technonlogies = () => {
   const images = [
     {
       id: 1,
@@ -51,7 +51,7 @@ const Skills = () => {
   ]
   return (
     <section className='min-h-[400px] mt-8'>
-      <h2 className='text-center text-white text-3xl py-4 font-semibold uppercase'>Skills</h2>
+      <h2 className='text-center text-white text-2xl md:text-3xl py-4 font-semibold uppercase'>Technologies </h2>
       <div className='grid grid-cols-4 md:grid-cols-10 gap-2 mt-6 '>
         {
           images.map(item => (
@@ -65,4 +65,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default Technonlogies

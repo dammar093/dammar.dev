@@ -2,23 +2,23 @@ import React from 'react'
 import HeroSection from '../components/HeroSection'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
-import Skills from '../components/Skills'
+import Techonologies from '../components/Techonologies'
 
 const Home = () => {
   return (
     <div className='min-h-screen'>
+
       <div>
         <HeroSection />
       </div>
       <div>
         <Projects />
       </div>
-
       <div>
-        <Skills />
+        <Techonologies />
       </div>
-      <div>
-
+      <div className='pb-4'>
+        <Contact />
       </div>
     </div>
   )
