@@ -12,6 +12,8 @@ const Contact = () => {
   }
   return (
     <div className='w-full flex justify-center'>
+      <h2 className='text-center text-white text-2xl md:text-3xl py-4 font-semibold uppercase'>Contact Me</h2>
+
       <form onSubmit={handleSubmit((data) => {
         handleForm(data)
       })} className=' w-full md:w-[400px] rounded-md bg-slate-800 p-4'>
