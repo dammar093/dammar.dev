@@ -1,6 +1,15 @@
 import React from 'react'
 import heroImage from "../assets/dyM.jpg"
+import resume from "../assets/resume.pdf"
 const HeroSection = () => {
+
+  const handleDownload = () => {
+    const fileName = resume;
+    const link = document.createElement('a');
+    link.href = fileName;
+    link.download = fileName;
+    link.click();
+  }
   return (
     <section className=' w-full h-[90vh] flex md:justify-between justify-center md:items-center flex-wrap-reverse mt-4 py-4'>
       <div className='md:w-[47%] w-full md:text-left text-center'>
@@ -19,7 +28,7 @@ const HeroSection = () => {
         </div>
         <br />
         <div>
-          <button className='px-4 py-2 bg-green-400 rounded-full tex-white font-semibold'>Download Resume</button>
+          <button onClick={handleDownload} className='px-4 py-2 bg-green-400 rounded-full tex-white font-semibold'>Download Resume</button>
         </div>
       </div>
       <div className='md:w-[47%] w-full flex items-center justify-center'>

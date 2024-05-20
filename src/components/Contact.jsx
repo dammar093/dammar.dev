@@ -5,16 +5,13 @@ const Contact = () => {
 
   const { register, handleSubmit, formState: { errors } } = useForm()
 
-
-
   const handleForm = (data) => {
     console.log(data.fullName);
   }
   return (
-    <div className='w-full'>
+    <div className='w-full m-0'>
       <h2 className='text-center text-white text-2xl md:text-3xl py-4 font-semibold uppercase'>Contact Me</h2>
-
-      <div className='w-full  flex justify-center'>
+      <div className='w-full flex justify-center'>
         <form onSubmit={handleSubmit((data) => {
           handleForm(data)
         })} className=' w-full md:w-[400px] rounded-md bg-slate-800 p-4'>
