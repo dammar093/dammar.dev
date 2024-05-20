@@ -67,7 +67,7 @@ const Navbar = () => {
             </div>
             <div>
               <NavLink to={"contact"} className={'text-xl text-white hover:text-green-400'}
-                onClick={() => setmenu(false)}
+                onClick={() => setmenu(prev => !prev)}
               ><span>Contact</span></NavLink>
             </div>
             <div className='flex gap-4'>
