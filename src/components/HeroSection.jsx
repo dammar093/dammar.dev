@@ -23,7 +23,7 @@ const HeroSection = () => {
           <br />
           <p className='text-md text-white' style={{ textAlign: "justify" }}>
             Hi there. My name is Dammar Singh Rana. I am a frontend developer.
-            I am working with HTML, CSS, JS,ReactJS, Tailwind and Bootstrap. I have 2+ experience of frontend developement.
+            I am working with HTML, CSS, JS,ReactJS, Tailwind and Bootstrap. I have 2+ years experience of frontend developement.
           </p>
         </div>
         <br />
