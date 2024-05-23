@@ -19,7 +19,7 @@ const data = [
   {
     id:3,
     title:'College Website',
-    desc:"-> This is a Collleg website UI based project. Technology used in this project HTML, Css, JavaScript and Bootsrap",
+    desc:"-> This is a Colleg website UI based project. Technology used in this project HTML, Css, JavaScript and Bootsrap",
     live:"https://dammar093.github.io/jmc3.0/",
     coverImage: clg
   }
