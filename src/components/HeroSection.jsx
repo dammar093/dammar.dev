@@ -17,7 +17,7 @@ const HeroSection = () => {
           <div className='text-green-400 text-2xl md:text-3xl'>Hello👋</div>
           <br />
           <div className='text-3xl md:text-4xl font-semibold text-white'>I'm Dammar Singh Rana</div>
-          <div className='text-[#999999] text-xl'>Fontend Developer👨‍💻</div>
+          <div className='text-[#999999] text-xl'>Frontend Developer👨‍💻</div>
         </div>
         <div>
           <br />
